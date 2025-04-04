@@ -16,7 +16,7 @@
     {
       "displayName": "Demo",
       "description": "Contains script that grabs the data from the data table and print the log",
-      "path": "Samples~/SamplesDemo"
+      "path": "Samples~/Demo"
     }
   ]
 }
