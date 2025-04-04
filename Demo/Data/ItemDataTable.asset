@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7404800985472654344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a358177af686dcc47bcc6f1fe01e8acc, type: 3}
+  m_Name: New_ItemData
+  m_EditorClassIdentifier: 
+  Name: Banana
+  ID: c1a77ab1-9c19-4e2b-8c83-62f411ddc358
+  DeveloperNotes: Weight in gram
+  _index: 1
+  Enabled: 1
+  MaxStack: 1
+  Weight: 500
+  Icon: {fileID: 0}
+--- !u!114 &-200582243900417050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a358177af686dcc47bcc6f1fe01e8acc, type: 3}
+  m_Name: New_ItemData
+  m_EditorClassIdentifier: 
+  Name: Box
+  ID: aab47f6a-beb9-4910-a226-20f293645b4c
+  DeveloperNotes: Weight in kg
+  _index: 3
+  Enabled: 1
+  MaxStack: 2
+  Weight: 1
+  Icon: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba393fdfda327e4585315a086a87fec, type: 3}
+  m_Name: ItemDataTable
+  m_EditorClassIdentifier: 
+  developerNote: 
+  selectedTypeIndex: 0
+  RowTypeName: Great.Datatable.Demo.ItemData
+  Rows:
+  - {fileID: 5484488640782640081}
+  - {fileID: -7404800985472654344}
+  - {fileID: 5643056448165579718}
+  - {fileID: -200582243900417050}
+--- !u!114 &5484488640782640081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a358177af686dcc47bcc6f1fe01e8acc, type: 3}
+  m_Name: New_ItemData
+  m_EditorClassIdentifier: 
+  Name: Apple
+  ID: cf74fbea-4660-4256-967a-9dc8ca18bdc5
+  DeveloperNotes: Weight in gram
+  _index: 0
+  Enabled: 1
+  MaxStack: 1
+  Weight: 500
+  Icon: {fileID: 0}
+--- !u!114 &5643056448165579718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a358177af686dcc47bcc6f1fe01e8acc, type: 3}
+  m_Name: New_ItemData
+  m_EditorClassIdentifier: 
+  Name: Pineapple
+  ID: 3eb868a3-61f7-456a-a358-7ce4a92cca4c
+  DeveloperNotes: Weight in gram
+  _index: 2
+  Enabled: 1
+  MaxStack: 1
+  Weight: 750
+  Icon: {fileID: 0}

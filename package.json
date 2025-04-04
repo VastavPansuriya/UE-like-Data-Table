@@ -1,0 +1,22 @@
+{
+  "name": "com.great.datatable",
+  "version": "1.0.0",
+  "displayName": "UE like Data Table",
+  "description": "It's a tool that let you create the data table of selected scriptable object that derive from helper class",
+  "unity": "2020.3",
+  "dependencies": {
+  },
+  "keywords": [ "data", "table", "data table", "unreal", "scriptable" ],
+  "author": {
+    "name": "Vastav Pansuriya",
+    "email": "greatgame.develop@gmail.com"
+  },
+
+  "samples": [
+    {
+      "displayName": "Demo",
+      "description": "Contains script that grabs the data from the data table and print the log",
+      "path": "Samples~/SamplesDemo"
+    }
+  ]
+}

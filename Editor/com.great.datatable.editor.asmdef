@@ -1,0 +1,18 @@
+{
+    "name": "Great.DataTable.Editor",
+    "rootNamespace": "Great.DataTable",
+    "references": [
+        "GUID:8f7f91e117b32854bb50ecd80abcf7ba"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
