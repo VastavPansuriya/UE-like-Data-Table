@@ -25,6 +25,7 @@ namespace Great.Datatable
         private Dictionary<int, bool> rowExpandedStates = new Dictionary<int, bool>();
         private SearchType searchType;
         private bool sortByName = false;
+        private int selectedTypeIndex = 0;
 
         public enum SearchType
         {
@@ -48,8 +49,22 @@ namespace Great.Datatable
             if (!string.IsNullOrEmpty(dataTable.RowTypeName))
             {
                 typeLocked = true;
-                //selectedTypeIndex = Array.FindIndex(rowTypes, t => t.Name == dataTable.RowTypeName);
+                selectedTypeIndex = GetIndexOfSelectedType();
             }
+        }
+
+        public int GetIndexOfSelectedType()
+        {
+            for (int i = 0; i < rowTypes.Length; i++)
+            {
+                var type = rowTypes[i];
+                Debug.Log(type.Name + "," + dataTable.RowTypeName);
+                if (type.Name == dataTable.RowTypeName)
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
 
         public override void OnInspectorGUI()
@@ -81,16 +96,14 @@ namespace Great.Datatable
             EditorGUILayout.HelpBox("Select the row type for this DataTable", MessageType.Info);
 
             var typeNames = rowTypes.Select(t => t.Name).ToArray();
-            dataTable.selectedTypeIndex = EditorGUILayout.Popup("Row Type", dataTable.selectedTypeIndex, typeNames);
+            selectedTypeIndex = EditorGUILayout.Popup("Row Type", selectedTypeIndex, typeNames);
 
-            int selectedTypeIndex = dataTable.selectedTypeIndex;
 
             if (GUILayout.Button("Lock Type", GUILayout.Height(30)))
             {
                 rowTypeNameProp.stringValue = rowTypes[selectedTypeIndex].Name;
                 dataTable.RowTypeName = rowTypes[selectedTypeIndex].Name;
                 typeLocked = true;
-                dataTable.RowType = rowTypes[selectedTypeIndex];
                 SaveChanges();
             }
         }
@@ -121,10 +134,6 @@ namespace Great.Datatable
             DataTable.showIDs = GUILayout.Toggle(DataTable.showIDs, "Show IDs", "Button", GUILayout.Width(80));
             sortByName = GUILayout.Toggle(sortByName, "Sort by Name", "Button", GUILayout.Width(100));
 
-            //if (GUILayout.Button("Validate", GUILayout.Width(80)))
-            //{
-            //    ValidateTable();
-            //}
             EditorGUILayout.EndHorizontal();
         }
         private List<DataTableRow> GetFilteredRows()
@@ -372,7 +381,7 @@ namespace Great.Datatable
 
         private void AddNewRow()
         {
-            var rowType = dataTable.RowType;
+            var rowType = rowTypes[GetIndexOfSelectedType()];
             int counter = 0;
             foreach (var row in rowTypes)
             {

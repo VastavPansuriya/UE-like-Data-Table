@@ -1,66 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-274309354113324203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e86f59f391e9c44eb15a0d9db8fffa1, type: 3}
-  m_Name: New_PlayerAnimationData
-  m_EditorClassIdentifier: 
-  Name: HighDamage
-  ID: d7636b39-0ecd-48bd-94aa-a4c79e258571
-  DeveloperNotes: 
-  _index: 2
-  Enabled: 1
-  health: 25
-  animationSpeed: 1
-  AnimationToPlayOnDamage: {fileID: 7400000, guid: 5684c021d52aee64b9d3b90416d3b29b, type: 2}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ba393fdfda327e4585315a086a87fec, type: 3}
-  m_Name: PlayerAnimDataTable
-  m_EditorClassIdentifier: 
-  developerNote: 
-  selectedTypeIndex: 1
-  RowTypeName: Great.Datatable.Demo.PlayerAnimationData
-  Rows:
-  - {fileID: 6907441583678790665}
-  - {fileID: 7221145380433281615}
-  - {fileID: -274309354113324203}
-  - {fileID: 8411873128994859061}
---- !u!114 &6907441583678790665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e86f59f391e9c44eb15a0d9db8fffa1, type: 3}
-  m_Name: New_PlayerAnimationData
-  m_EditorClassIdentifier: 
-  Name: LowDamage
-  ID: 651325e2-a163-4956-af0e-f9b82036b385
-  DeveloperNotes: 
-  _index: 0
-  Enabled: 1
-  health: 75
-  animationSpeed: 1
-  AnimationToPlayOnDamage: {fileID: 7400000, guid: bbbc25d21642532458795176db1761d7, type: 2}
---- !u!114 &7221145380433281615
+--- !u!114 &-6573291991824369691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,14 +13,14 @@ MonoBehaviour:
   m_Name: New_PlayerAnimationData
   m_EditorClassIdentifier: 
   Name: MidDamage
-  ID: b42698fe-cd8d-4c31-b9f1-4d24adf5f3b8
+  ID: 5da82699-002a-4c7a-a3a9-e0ea1462359c
   DeveloperNotes: 
   _index: 1
   Enabled: 1
   health: 50
   animationSpeed: 1
   AnimationToPlayOnDamage: {fileID: 7400000, guid: de5c1547f36b57343abb289f089e261b, type: 2}
---- !u!114 &8411873128994859061
+--- !u!114 &-1346442992699017458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,10 +33,69 @@ MonoBehaviour:
   m_Name: New_PlayerAnimationData
   m_EditorClassIdentifier: 
   Name: Die
-  ID: 07258756-ebc0-4a3d-92d6-b28ec8e5b221
+  ID: c185decf-360b-46cf-abe1-9056ad8c4b57
   DeveloperNotes: 
   _index: 3
   Enabled: 1
   health: 0
-  animationSpeed: 0.5
+  animationSpeed: 2
   AnimationToPlayOnDamage: {fileID: 7400000, guid: ce8a46a648883c04aaddd41f39190971, type: 2}
+--- !u!114 &-38728701522089512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e86f59f391e9c44eb15a0d9db8fffa1, type: 3}
+  m_Name: New_PlayerAnimationData
+  m_EditorClassIdentifier: 
+  Name: LowDamage
+  ID: 418d8c4e-bdcb-49ad-be65-2354947defe2
+  DeveloperNotes: 
+  _index: 0
+  Enabled: 1
+  health: 75
+  animationSpeed: 1
+  AnimationToPlayOnDamage: {fileID: 7400000, guid: bbbc25d21642532458795176db1761d7, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba393fdfda327e4585315a086a87fec, type: 3}
+  m_Name: PlayerAnimData
+  m_EditorClassIdentifier: 
+  developerNote: 
+  RowTypeName: PlayerAnimationData
+  Rows:
+  - {fileID: -38728701522089512}
+  - {fileID: -6573291991824369691}
+  - {fileID: 90277545079146588}
+  - {fileID: -1346442992699017458}
+--- !u!114 &90277545079146588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e86f59f391e9c44eb15a0d9db8fffa1, type: 3}
+  m_Name: New_PlayerAnimationData
+  m_EditorClassIdentifier: 
+  Name: HighDamage
+  ID: 4dc91bea-d296-4220-a35b-7eff800add2c
+  DeveloperNotes: 
+  _index: 2
+  Enabled: 1
+  health: 25
+  animationSpeed: 1
+  AnimationToPlayOnDamage: {fileID: 7400000, guid: 5684c021d52aee64b9d3b90416d3b29b, type: 2}

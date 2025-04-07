@@ -14,10 +14,7 @@ namespace Great.Datatable
 #if UNITY_EDITOR
         [SerializeField, TextArea] private string developerNote; // Only visible in Editor
         public static bool showIDs = true;
-        public int selectedTypeIndex = 0;
 #endif
-
-        [HideInInspector] public Type RowType;
 
         [HideInInspector] public string RowTypeName;
         public List<DataTableRow> Rows = new List<DataTableRow>();

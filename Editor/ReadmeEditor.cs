@@ -143,6 +143,11 @@ public class ReadmeEditor : Editor
             Support();
         }
 
+        if (GUILayout.Button("Discord", GUILayout.Height(30)))
+        {
+            Application.OpenURL("https://discord.gg/bStFemGB");
+        }
+
         if (GUILayout.Button("Remove Readme Assets"))
         {
             RemoveTutorial();

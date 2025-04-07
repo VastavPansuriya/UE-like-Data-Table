@@ -272,8 +272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6c9865c8f60ea4e8b57affb6610bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemDataTable: {fileID: 11400000, guid: 5cdf1d0246f40b646828087c995fe8f9, type: 2}
-  playerAnimDataTable: {fileID: 11400000, guid: 5cdf1d0246f40b646828087c995fe8f9, type: 2}
+  itemDataTable: {fileID: 11400000, guid: 8f51de7541478db479cf12aa6f8884cd, type: 2}
+  playerAnimDataTable: {fileID: 11400000, guid: 39fad434473fb8c46a6635feae1e726e, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

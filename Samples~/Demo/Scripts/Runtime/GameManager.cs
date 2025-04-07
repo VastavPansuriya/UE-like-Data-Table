@@ -25,14 +25,14 @@ namespace Great.Datatable.Demo
             List<PlayerAnimationData> playerAnimationDatas = playerAnimDataTable.GetRows<PlayerAnimationData>();
             foreach (PlayerAnimationData data in playerAnimationDatas)
             {
-                Debug.Log($"<color=red>AnimationData:</color> {data}");
+                Debug.Log($"<color=red>AnimationData All Data Log:</color> {data}");
             }
         }
 
         private void Item()
         {
             ItemData itemData = itemDataTable.GetByIndex<ItemData>(0);
-            Debug.Log($"<color=yellow>ItemData:</color>" + itemData.ToString());
+            Debug.Log($"<color=yellow>ItemData Single Data Log:</color>" + itemData.ToString());
         }
     }
 }
