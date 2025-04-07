@@ -48,7 +48,7 @@ namespace Great.Datatable
             if (!string.IsNullOrEmpty(dataTable.RowTypeName))
             {
                 typeLocked = true;
-                //selectedTypeIndex = Array.FindIndex(rowTypes, t => t.FullName == dataTable.RowTypeName);
+                //selectedTypeIndex = Array.FindIndex(rowTypes, t => t.Name == dataTable.RowTypeName);
             }
         }
 
@@ -87,8 +87,8 @@ namespace Great.Datatable
 
             if (GUILayout.Button("Lock Type", GUILayout.Height(30)))
             {
-                rowTypeNameProp.stringValue = rowTypes[selectedTypeIndex].FullName;
-                dataTable.RowTypeName = rowTypes[selectedTypeIndex].FullName;
+                rowTypeNameProp.stringValue = rowTypes[selectedTypeIndex].Name;
+                dataTable.RowTypeName = rowTypes[selectedTypeIndex].Name;
                 typeLocked = true;
                 dataTable.RowType = rowTypes[selectedTypeIndex];
                 SaveChanges();
@@ -376,10 +376,10 @@ namespace Great.Datatable
             int counter = 0;
             foreach (var row in rowTypes)
             {
-                Debug.Log(counter++ + "," + row.FullName);
+                Debug.Log(counter++ + "," + row.Name);
             }
 
-            var newRow = (DataTableRow)ScriptableObject.CreateInstance(rowType.FullName);
+            var newRow = (DataTableRow)ScriptableObject.CreateInstance(rowType.Name);
             newRow.name = "New_" + rowType.Name;
             newRow.ID = Guid.NewGuid().ToString();
 
